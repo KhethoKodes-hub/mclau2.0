@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>McLau Solutions (Pty) Ltd - Cleaning & Chemical Specialists</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+  <link rel="stylesheet" href="css/flaticon.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    :root {
+      --mclau-navy: #4392d1;
+      --mclau-gold: #00b33a;
+      --mclau-light: #f5f5f5;
+      --mclau-blue: #4392d1;
+    }
+
+    /* Top bar */
+    .wrap {
+      background-color: var(--mclau-navy);
+      padding: 1px 0;
+    }
+    .wrap .phone a,
+    .wrap .mailus {
+      color: #ccc;
+    }
+    .wrap .phone a:hover { color: var(--mclau-gold); } 
+
+    body { margin-top: 0 !important; padding-top: 0 !important; }
+    .ftco_navbar { background-color: #fff !important; min-height: 90px; margin-top: 0 !important; }
+    .ftco-navbar-light { position: relative !important; top: 0 !important; }
+    .navbar-brand { color: #4392d1 !important; padding: 5px 0; }
+    .navbar-brand span { color: #00b33a; }
+    .nav-item .nav-link { color: #333 !important; }
+    .nav-item.active .nav-link, .nav-item .nav-link:hover { color: #4392d1 !important; }
+
+
+    /* Hero */
+    .hero-wrap {
+      background-color: var(--mclau-navy);
+      position: relative;
+    }
+    .hero-wrap h1 {
+      color: #fff;
+      font-size: 3rem;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+    .hero-wrap h2.subheading {
+      color: var(--mclau-gold);
+      font-size: 1.1rem;
+      font-weight: 500;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+    .hero-wrap .btn-primary {
+      background-color: var(--mclau-gold);
+      border-color: var(--mclau-gold);
+      color: #fff;
+      font-weight: 700;
+      border-radius: 3px;
+    }
+    .hero-wrap .btn-primary:hover {
+      background-color: #009b31;
+      border-color: #009b31;
+    }
+
+    /* BBE badge in hero */
+    .bbe-badge {
+      display: inline-block;
+      background: rgba(0, 179, 58, 0.15);
+      border: 1px solid var(--mclau-gold);
+      border-radius: 4px;
+      padding: 6px 16px;
+      color: var(--mclau-gold);
+      font-size: 0.82rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+    }
+
+    /* Appointment section */
+    .ftco-appointment { background-color: var(--mclau-navy); }
+    .ftco-appointment .btn-primary {
+      background-color: var(--mclau-gold);
+      border-color: var(--mclau-gold);
+      color: #fff;
+      font-weight: 700;
+      width: 100%;
+    }
+    .ftco-appointment .wrap-appointment { border-top: 4px solid var(--mclau-gold); }
+
+    /* About section */
+    .time-open-wrap { background: var(--mclau-navy); }
+    .time-open-wrap h2, .time-open-wrap h4, .time-open-wrap p, .time-open-wrap span { color: #fff; }
+    .desc.bg-secondary { background-color: var(--mclau-gold) !important; }
+    .desc.bg-secondary h3, .desc.bg-secondary span { color: #fff !important; }
+
+    .subheading { color: var(--mclau-gold) !important; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; }
+
+    /* Counter */
+    .ftco-counter .number { color: var(--mclau-navy); font-size: 2.4rem; }
+
+    /* Services icons */
+    .services .icon { color: var(--mclau-gold); }
+
+    /* Testimonials */
+    .ftco-bg-dark { background-color: var(--mclau-navy) !important; }
+
+    /* Pricing */
+    .block-7 { border-top: 3px solid var(--mclau-gold); }
+    .block-7.active { border-top: 3px solid var(--mclau-blue); background: var(--mclau-blue); color: #fff; }
+    .block-7.active .heading-2, .block-7.active .price { color: #fff; }
+    .block-7.active .btn-primary { background: var(--mclau-gold); border-color: var(--mclau-gold); color: #fff; }
+    .block-7 .btn-primary { background: var(--mclau-navy); border-color: var(--mclau-navy); color: #fff; }
+
+    /* Footer */
+    .footer { background-color: var(--mclau-navy) !important; }
+    .footer-heading { color: var(--mclau-white)  }
+    .footer p, .footer a, .footer li { color: rgba(255,255,255,0.75) !important; }
+    .footer a:hover { color: var(--mclau-gold) !important; }
+
+    /* Values section */
+    .values-section { background: var(--mclau-light); }
+    .value-card {
+      background: #fff;
+      border-left: 4px solid var(--mclau-gold);
+      border-radius: 4px;
+      padding: 1.2rem 1.5rem;
+      margin-bottom: 1rem;
+    }
+    .value-card h5 { color: var(--mclau-navy); font-weight: 700; margin-bottom: 4px; }
+    .value-card p { color: #666; margin: 0; font-size: 0.95rem; }
+
+    /* SABS badge */
+    .sabs-strip {
+      background: var(--mclau-gold);
+      padding: 12px 0;
+      text-align: center;
+    }
+    .sabs-strip p {
+      margin: 0;
+      color: #fff;
+      font-weight: 700;
+      font-size: 0.9rem;
+      letter-spacing: 1px;
+    }
+
+    /* Work clients */
+    .client-item {
+      background: #fff;
+      border: 1px solid #e0e0e0;
+      border-radius: 4px;
+      padding: 1rem 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+    .client-item i { color: var(--mclau-gold); font-size: 1.4rem; }
+    .client-item p { margin: 0; color: #333; font-size: 0.95rem; }
+    .client-item strong { color: var(--mclau-navy); }
+  </style>
+</head>
+<body>
+
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><img src="images/mclaulogo.png" style="height:100px; width:100px; object-fit:contain; display:block;" alt="McLau Solutions Logo"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="fa fa-bars"></span> Menu
+      </button>
+      <div class="collapse navbar-collapse" id="ftco-nav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <div class="hero-wrap js-fullheight" style="background-image: url('images/bg_11.png');" data-stellar-background-ratio="0.5">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-start" data-scrollax-parent="true">
+        <div class="col-md-7 ftco-animate">
+          <!--<div class="bbe-badge">100% Youth, Women &amp; Black-Owned | Est. 2019 | Kathu, Northern Cape</div>
+          <h2 class="subheading">Manufacturing &amp; Supply of Cleaning Solutions</h2>-->
+          <h1 class="mb-4">We keep South Africa cleaner, safer, and stronger.</h1>
+          <p class="mb-4" style="color:rgba(255,255,255,0.8); font-size:1.05rem;">Our products are tested and complies with SABS Standards.
+
+We also a member of proudly South Africa meaning we are entitled to identify the qualifying products in the organisation as proudly South African 🇿🇦</p>
+          <p>
+            <a href="services.html" class="btn btn-primary mr-md-4 py-2 px-4">Our Services <span class="fa fa-arrow-right ml-1"></span></a>
+            <a href="contact.html" class="btn btn-outline-light py-2 px-4">Get a Quote</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SABS strip -->
+  <div class="sabs-strip">
+    <p><span class="fa fa-check-circle mr-2"></span> SABS-Compliant Products &nbsp;|&nbsp; Tested with Tshwane University of Technology &amp; Technology Innovation Agency &nbsp;|&nbsp; Quality from Production to Delivery</p>
+  </div>
+
+  <!-- Quick Contact / Appointment -->
+  <section class="ftco-appointment ftco-section ftco-no-pt ftco-no-pb">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row d-md-flex justify-content-center">
+        <div class="col-md-12">
+          <div class="wrap-appointment bg-white d-md-flex pl-md-4 pb-5 pb-md-0">
+            <form action="#" class="appointment w-100">
+              <div class="row justify-content-center">
+                <div class="col-12 col-md d-flex align-items-center pt-4 pt-md-0">
+                  <div class="form-group py-md-4 py-2 px-4 px-md-0">
+                    <label for="name">Your Name</label>
+                    <input type="text" class="form-control" placeholder="Full Name">
+                  </div>
+                </div>
+                <div class="col-12 col-md d-flex align-items-center">
+                  <div class="form-group py-md-4 py-2 px-4 px-md-0">
+                    <label for="phone">Phone Number</label>
+                    <input type="text" class="form-control" placeholder="e.g. 071 000 0000">
+                  </div>
+                </div>
+                <div class="col-12 col-md d-flex align-items-center">
+                  <div class="form-group py-md-4 py-2 px-4 px-md-0">
+                    <label for="service">Select Service</label>
+                    <div class="form-field">
+                      <div class="select-wrap">
+                        <div class="icon"><span class="fa fa-chevron-down"></span></div>
+                        <select name="service" id="service" class="form-control">
+                          <option value="">Select Service</option>
+                          <option value="detergents">Detergent &amp; Chemical Supply</option>
+                          <option value="cleaning">Cleaning Services</option>
+                          <option value="maintenance">Maintenance Services</option>
+                          <option value="water">Water Treatment Chemicals</option>
+                          <option value="custom">Custom Formulations</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md d-flex align-items-center align-items-stretch">
+                  <div class="form-group py-md-4 py-2 px-4 px-md-0 d-flex align-items-stretch bg-primary">
+                    <input type="submit" value="Request a Quote" class="btn btn-primary py-3 px-4">
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="ftco-section ftco-no-pt ftco-no-pb">
+    <div class="container">
+      <div class="row d-flex no-gutters">
+        <div class="col-md-6 d-flex">
+          <div class="img d-flex align-items-center justify-content-center py-5 py-md-0" style="background-image:url(images/mclau33.png);">
+            <div class="time-open-wrap">
+              <div class="desc p-4">
+                <h2>Business Hours</h2>
+                <div class="opening-hours">
+                  <h4>Operating Days:</h4>
+                  <p class="pl-3">
+                    <span><strong>Monday – Friday:</strong> 8am to 5pm</span>
+                    <span><strong>Saturday:</strong> 8am to 1pm</span>
+                  </p>
+                  <h4>Closed:</h4>
+                  <p class="pl-3">
+                    <span>Sundays</span>
+                    <span>Public Holidays</span>
+                  </p>
+                </div>
+              </div>
+              <div class="desc p-4 bg-secondary">
+                <h3 class="heading">Contact Us Directly</h3>
+                <span class="phone">071 538 4746</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 pl-md-5 pt-md-5">
+          <div class="row justify-content-start py-5">
+            <div class="col-md-12 heading-section ftco-animate">
+              <span class="subheading">About McLau Solutions</span>
+              <h2 class="mb-4">Proudly South African. Committed to Excellence.</h2>
+              <p>Founded in 2019, McLau Solutions (Pty) Ltd is a 100% Youth, Women, and Black-owned company based in Kathu, Northern Cape. We specialise in the manufacturing and supply of high-quality detergents, cleaning materials, and consumables.</p>
+              <p>Our products are tested in collaboration with the Tshwane University of Technology and the Technology Innovation Agency, ensuring full SABS compliance. We operate across the Northern Cape, with an extended footprint in Gauteng through strategic partnerships.</p>
+            </div>
+          </div>
+          <div class="row ftco-counter py-5" id="section-counter">
+            <div class="col-md-6 col-lg-4 d-flex justify-content-center counter-wrap ftco-animate">
+              <div class="block-18">
+                <div class="text"><strong class="number" data-number="6">0</strong></div>
+                <div class="text"><span>Years of<br>Operation</span></div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 d-flex justify-content-center counter-wrap ftco-animate">
+              <div class="block-18">
+                <div class="text"><strong class="number" data-number="3">0</strong></div>
+                <div class="text"><span>Key<br>Clients Served</span></div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 d-flex justify-content-center counter-wrap ftco-animate">
+              <div class="block-18">
+                <div class="text"><strong class="number" data-number="4">0</strong></div>
+                <div class="text"><span>Product<br>Sizes Available</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="ftco-section">
+    <div class="container">
+      <div class="row justify-content-center pb-5 mb-3">
+        <div class="col-md-7 heading-section text-center ftco-animate">
+          <!--<span class="subheading">Services</span>-->
+          <h2>What We Offer</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-lg-4 services ftco-animate">
+          <div class="d-block d-flex">
+            <div class="icon d-flex justify-content-center align-items-center">
+              <span class="flaticon-workplace"></span>
+            </div>
+            <div class="media-body pl-3">
+              <h3 class="heading">Office &amp; Industrial Cleaning</h3>
+              <p>Professional cleaning for offices, industrial facilities, and commercial spaces. Reliable, consistent, and thorough.</p>
+              <p><a href="services.html" class="btn-custom">Read more</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 services ftco-animate">
+          <div class="d-block d-flex">
+            <div class="icon d-flex justify-content-center align-items-center">
+              <span class="flaticon-rug"></span>
+            </div>
+            <div class="media-body pl-3">
+              <h3 class="heading">Carpet &amp; Furniture Cleaning</h3>
+              <p>Deep cleaning for carpets, chairs, and upholstered furniture. We restore freshness and extend the life of your assets.</p>
+              <p><a href="services.html" class="btn-custom">Read more</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 services ftco-animate">
+          <div class="d-block d-flex">
+            <div class="icon d-flex justify-content-center align-items-center">
+              <span class="flaticon-kitchen"></span>
+            </div>
+            <div class="media-body pl-3">
+              <h3 class="heading">Kitchen &amp; Bathroom Maintenance</h3>
+              <p>Hygienic deep cleans for kitchens and bathrooms in commercial and residential environments.</p>
+              <p><a href="services.html" class="btn-custom">Read more</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 services ftco-animate">
+          <div class="d-block d-flex">
+            <div class="icon d-flex justify-content-center align-items-center">
+              <span class="flaticon-garden"></span>
+            </div>
+            <div class="media-body pl-3">
+              <h3 class="heading">Detergent &amp; Chemical Manufacturing</h3>
+              <p>Industrial detergents, degreasers, and cleaning agents available in 5L, 25L, 210L and 1000L. SABS-compliant.</p>
+              <p><a href="services.html" class="btn-custom">Read more</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 services ftco-animate">
+          <div class="d-block d-flex">
+            <div class="icon d-flex justify-content-center align-items-center">
+              <span class="flaticon-balcony"></span>
+            </div>
+            <div class="media-body pl-3">
+              <h3 class="heading">Water Treatment &amp; Mining Chemicals</h3>
+              <p>Specialised chemical solutions for water treatment and mining sector applications across the Northern Cape.</p>
+              <p><a href="services.html" class="btn-custom">Read more</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 services ftco-animate">
+          <div class="d-block d-flex">
+            <div class="icon d-flex justify-content-center align-items-center">
+              <span class="flaticon-pool"></span>
+            </div>
+            <div class="media-body pl-3">
+              <h3 class="heading">Facility Maintenance</h3>
+              <p>Building repairs, light bulb and air filter replacements, landscaping, and lock repairs for total facility upkeep.</p>
+              <p><a href="services.html" class="btn-custom">Read more</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Company Values -->
+  <section class="ftco-section values-section ftco-no-pt" style="background-image: url('images/deter6.jpg'); background-size: cover; background-position: center; position: relative;">
+    <div style="position:absolute;top:0;left:0;right:0;bottom:0;background:rgba(245,245,245,0.78);z-index:0;"></div>
+    <div class="container" style="position:relative;z-index:1;">
+      <div class="row justify-content-center pb-5 mb-3">
+        <div class="col-md-7 heading-section text-center ftco-animate"><br>
+          <!--<span class="subheading">Our Values</span>-->
+          <h2>What Drives Us</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="value-card">
+            <h5><span class="fa fa-heart mr-2" style="color:var(--mclau-gold);"></span>Care &amp; Respect</h5>
+            <p>We listen, understand, and respond to the needs of our clients and team members.</p>
+          </div>
+          <div class="value-card">
+            <h5><span class="fa fa-lightbulb-o mr-2" style="color:var(--mclau-gold);"></span>Innovation</h5>
+            <p>We create efficient, results-oriented products that solve real cleaning challenges.</p>
+          </div>
+          <div class="value-card">
+            <h5><span class="fa fa-handshake-o mr-2" style="color:var(--mclau-gold);"></span>Integrity</h5>
+            <p>We operate honestly and transparently, even under challenging circumstances.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="value-card">
+            <h5><span class="fa fa-shield mr-2" style="color:var(--mclau-gold);"></span>Safety</h5>
+            <p>We prioritise zero harm to people, the environment, and property in all operations.</p>
+          </div>
+          <div class="value-card">
+            <h5><span class="fa fa-check-circle mr-2" style="color:var(--mclau-gold);"></span>Accountability</h5>
+            <p>We deliver on our promises and uphold the highest standards of professionalism.</p>
+          </div>
+          <div class="value-card" style="border-left-color: var(--mclau-navy);">
+            <h5><span class="fa fa-map-marker mr-2" style="color:var(--mclau-navy);"></span>Our Mission</h5>
+            <p>To become South Africa's largest independent cleaning manufacturer while building lasting client relationships and delivering measurable value.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials / Our Work -->
+  <section class="ftco-section testimony-section ftco-bg-dark">
+    <div class="container">
+      <div class="row justify-content-center pb-5 mb-3">
+        <div class="col-md-7 heading-section heading-section-white text-center ftco-animate">
+          <!--<span class="subheading">Our Clients</span>-->
+          <h2 style="color:#fff;">Trusted Across the John Taolo Gaetsewe District</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 ftco-animate">
+          <div class="client-item">
+            <i class="fa fa-industry"></i>
+            <p><strong>CT Hydraulics, Kathu</strong><br>Supply of cleaning chemicals and consumables</p>
+          </div>
+        </div>
+        <div class="col-md-4 ftco-animate">
+          <div class="client-item">
+            <i class="fa fa-truck"></i>
+            <p><strong>Segokaku Transport, Kuruman</strong><br>Supply of cleaning materials</p>
+          </div>
+        </div>
+        <div class="col-md-4 ftco-animate">
+          <div class="client-item">
+            <i class="fa fa-building"></i>
+            <p><strong>Technoserve, Kathu</strong><br>Supply and cleaning of carpets and chairs</p>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center mt-4">
+        <div class="col-md-8 text-center">
+          <p style="color:rgba(255,255,255,0.75);">We serve clients across both the private and corporate sectors in the Northern Cape and Gauteng. Contact us to become a supply partner.</p>
+          <a href="contact.html" class="btn btn-primary mt-2" style="background:var(--mclau-gold);border-color:var(--mclau-gold);color:#fff;font-weight:700;">Partner with Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio / Projects -->
+  <section class="ftco-section ftco-no-pb">
+    <div class="container">
+      <div class="row justify-content-center pb-5 mb-3">
+        <div class="col-md-12 heading-section text-center ftco-animate">
+          <!--<span class="subheading">Our Work</span>-->
+          <h2>Recent Cleaning &amp; Supply Projects</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-lg-3 ftco-animate">
+          <div class="work img d-flex align-items-center" style="background-image: url(images/work1.png);">
+            <a href="images/work-1.jpg" class="icon image-popup d-flex justify-content-center align-items-center"><span class="fa fa-expand"></span></a>
+            <div class="desc w-100 px-4 text-center pt-5 mt-5">
+              <div class="text w-100 mb-3 mt-4"><h2><a href="work-single.html">Office Cleaning</a></h2></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 ftco-animate">
+          <div class="work img d-flex align-items-center" style="background-image: url(images/work2.png);">
+            <a href="images/work-2.jpg" class="icon image-popup d-flex justify-content-center align-items-center"><span class="fa fa-expand"></span></a>
+            <div class="desc w-100 px-4 text-center pt-5 mt-5">
+              <div class="text w-100 mb-3 mt-4"><h2><a href="work-single.html">Chemical Supply</a></h2></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 ftco-animate">
+          <div class="work img d-flex align-items-center" style="background-image: url(images/work3.png);">
+            <a href="images/work-3.jpg" class="icon image-popup d-flex justify-content-center align-items-center"><span class="fa fa-expand"></span></a>
+            <div class="desc w-100 px-4 text-center pt-5 mt-5">
+              <div class="text w-100 mb-3 mt-4"><h2><a href="work-single.html">Carpet Cleaning</a></h2></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 ftco-animate">
+          <div class="work img d-flex align-items-center" style="background-image: url(images/work4.png);">
+            <a href="images/work-4.jpg" class="icon image-popup d-flex justify-content-center align-items-center"><span class="fa fa-expand"></span></a>
+            <div class="desc w-100 px-4 text-center pt-5 mt-5">
+              <div class="text w-100 mb-3 mt-4"><h2><a href="work-single.html">Industrial Cleaning</a></h2></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HSE Commitment banner -->
+  <section class="ftco-section ftco-intro" style="background-image: url('images/chem2.png');" data-stellar-background-ratio="0.5">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-9 text-center">
+          <h2 style="color:#fff;">Health, Safety &amp; Environmental Commitment</h2>
+          <p style="color:rgba(255,255,255,0.8); font-size:1.05rem; margin: 1rem 0 1.5rem;">McLau Solutions aligns with international HSE best practices — ensuring zero harm, legal compliance, and continuous improvement. We prioritise safe operations, employee welfare, and transparent stakeholder engagement.</p>
+          <a href="about.html" class="btn btn-primary py-2 px-4" style="background:var(--mclau-gold);border-color:var(--mclau-gold);color:#fff;font-weight:700;">Learn About Our Standards</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section class="ftco-section bg-light">
+    <div class="container">
+      <div class="row justify-content-center pb-5 mb-3">
+        <div class="col-md-7 heading-section text-center ftco-animate">
+          <span class="subheading mb-3">Product Sizes</span>
+          <h2>Available Supply Volumes</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-lg-3 ftco-animate">
+          <div class="block-7">
+            <div class="text-center">
+              <div class="icon d-flex align-items-center justify-content-center"><span class="fa flaticon-sprayer"></span></div>
+              <h4 class="heading-2">5 Litre</h4>
+              <span class="price"><span class="number">5L</span></span>
+              <ul class="pricing-text mb-5">
+                <li><span class="fa fa-check mr-2"></span>Household use</li>
+                <li><span class="fa fa-check mr-2"></span>Small office</li>
+                <li><span class="fa fa-check mr-2"></span>Convenient size</li>
+                <li><span class="fa fa-check mr-2"></span>All product types</li>
+              </ul>
+              <a href="contact.html" class="btn btn-primary px-4 py-3">Get a Quote</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 ftco-animate">
+          <div class="block-7 active">
+            <div class="text-center">
+              <div class="icon d-flex align-items-center justify-content-center"><span class="fa flaticon-vacuum-cleaner"></span></div>
+              <h4 class="heading-2">25 Litre</h4>
+              <span class="price"><span class="number" style="color:#fff">25L</span></span>
+              <ul class="pricing-text mb-5">
+                <li><span class="fa fa-check mr-2"></span>SME &amp; business</li>
+                <li><span class="fa fa-check mr-2"></span>Office complexes</li>
+                <li><span class="fa fa-check mr-2"></span>Popular choice</li>
+                <li><span class="fa fa-check mr-2"></span>All product types</li>
+              </ul>
+              <a href="contact.html" class="btn btn-primary px-4 py-3">Get a Quote</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 ftco-animate">
+          <div class="block-7">
+            <div class="text-center">
+              <div class="icon d-flex align-items-center justify-content-center"><span class="fa flaticon-tap"></span></div>
+              <h4 class="heading-2">210 Litre</h4>
+              <span class="price"><span class="number">210L</span></span>
+              <ul class="pricing-text mb-5">
+                <li><span class="fa fa-check mr-2"></span>Industrial sites</li>
+                <li><span class="fa fa-check mr-2"></span>Corporate clients</li>
+                <li><span class="fa fa-check mr-2"></span>Drum supply</li>
+                <li><span class="fa fa-check mr-2"></span>All product types</li>
+              </ul>
+              <a href="contact.html" class="btn btn-primary px-4 py-3">Get a Quote</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 ftco-animate">
+          <div class="block-7">
+            <div class="text-center">
+              <div class="icon d-flex align-items-center justify-content-center"><span class="fa flaticon-cleaning"></span></div>
+              <h4 class="heading-2">1000 Litre</h4>
+              <span class="price"><span class="number">1000L</span></span>
+              <ul class="pricing-text mb-5">
+                <li><span class="fa fa-check mr-2"></span>Mining &amp; large sites</li>
+                <li><span class="fa fa-check mr-2"></span>Bulk contracts</li>
+                <li><span class="fa fa-check mr-2"></span>IBC tote supply</li>
+                <li><span class="fa fa-check mr-2"></span>Custom formulations</li>
+              </ul>
+              <a href="contact.html" class="btn btn-primary px-4 py-3">Get a Quote</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer ftco-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-lg-3 mb-4 mb-md-0">
+          <h2 class="footer-heading" style="color: white;">McLau Solutions</h2>
+          <p>100% Youth, Women &amp; Black-owned cleaning and chemical manufacturing company. Proudly based in Kathu, Northern Cape since 2019.</p>
+          <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-4">
+            <li class="ftco-animate"><a href="https://www.facebook.com/MCLAUCLEANINGCHEMICALS"><span class="fa fa-facebook"></span></a></li>
+          </ul>
+        </div>
+        <div class="col-md-6 col-lg-3 mb-4 mb-md-0">
+          <h2 class="footer-heading">Our Services</h2>
+          <ul class="list-unstyled">
+            <li><a href="services.html" class="py-1 d-block">Detergent Manufacturing &amp; Supply</a></li>
+            <li><a href="services.html" class="py-1 d-block">Industrial Cleaning Services</a></li>
+            <li><a href="services.html" class="py-1 d-block">Water Treatment Chemicals</a></li>
+            <li><a href="services.html" class="py-1 d-block">Facility Maintenance</a></li>
+            <li><a href="services.html" class="py-1 d-block">Custom Formulations</a></li>
+          </ul>
+        </div>
+        <div class="col-md-6 col-lg-3 pl-lg-5 mb-4 mb-md-0">
+          <h2 class="footer-heading">Quick Links</h2>
+          <ul class="list-unstyled">
+            <li><a href="index.html" class="py-1 d-block">Home</a></li>
+            <li><a href="about.html" class="py-1 d-block">About Us</a></li>
+            <li><a href="services.html" class="py-1 d-block">Services</a></li>
+            <li><a href="contact.html" class="py-1 d-block">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-6 col-lg-3 mb-4 mb-md-0">
+          <h2 class="footer-heading">Get In Touch</h2>
+          <div class="block-23 mb-3">
+            <ul>
+              <li><span class="icon fa fa-map-marker"></span><span class="text">10236 Muswodi Dipeni, 0900<br>Kathu, Northern Cape, South Africa</span></li>
+              <li><a href="tel:0715384746"><span class="icon fa fa-phone"></span><span class="text">071 538 4746</span></a></li>
+              <li><a href="mailto:info@mclausolutions.co.za"><span class="icon fa fa-paper-plane"></span><span class="text">info@mclausolutions.co.za</span></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-md-12 text-center">
+          <p style="color:rgba(255,255,255,0.5);">&copy; <script>document.write(new Date().getFullYear());</script> McLau Solutions (Pty) Ltd. All rights reserved. | Reg. No. pending | B-BBEE Level 1</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Loader -->
+  <div id="ftco-loader" class="show fullscreen">
+    <svg class="circular" width="48px" height="48px">
+      <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/>
+      <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#00b33a"/>
+    </svg>
+  </div>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="js/google-map.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    // Remove any padding-top added by main.js for the removed top bar
+    document.body.style.paddingTop = '0';
+    document.body.style.marginTop = '0';
+  </script>
+</body>
+</html>
