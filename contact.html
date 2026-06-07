@@ -123,7 +123,7 @@
     .info-hours strong { color: #fff; }
 
     /* Map */
-    #map.map { height: 400px; }
+    .map-embed { height: 400px; width: 100%; border: 0; border-radius: 4px; }
 
     /* Newsletter strip */
     .bg-primary { background-color: var(--mclau-gold) !important; }
@@ -389,7 +389,14 @@
       <!-- Map -->
       <div class="row mt-4">
         <div class="col-md-12">
-          <div id="map" class="map"></div>
+          <iframe
+            class="map-embed"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=22.9561%2C-27.7914%2C23.1561%2C-27.5914&layer=mapnik&marker=-27.6914%2C23.0561"
+            allowfullscreen
+            loading="lazy"
+            title="McLau Solutions Location - Kathu, Northern Cape">
+          </iframe>
+          <p class="mt-2" style="font-size:0.85rem; color:#888;">📍 Kathu, Northern Cape, South Africa &mdash; <a href="https://www.openstreetmap.org/?mlat=-27.6914&mlon=23.0561#map=14/-27.6914/23.0561" target="_blank" rel="noopener">View larger map</a></p>
         </div>
       </div>
 
@@ -487,8 +494,6 @@
   <script src="js/owl.carousel.min.js"></script>
   <script src="js/jquery.magnific-popup.min.js"></script>
   <script src="js/scrollax.min.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-  <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
